@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="/FE/customer/css/signup.css">
+    <script src="https://kit.fontawesome.com/e8e6ca6395.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <iframe src="/FE/customer/views/nav.html" name="nav_iframe" referrerpolicy="no-referrer" class="nav"></iframe>
+    <div class="container">
+        <div class="content">
+            <h1>Đăng Kí</h1>
+        </div>
+        <form action="" class="dangki" id="signup-form">
+            <div class="form-control">
+                <label for="text"><strong>Họ và tên</strong></label>
+                <input type="text" id="text" placeholder="Họ và tên đầy đủ">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="date"><strong>Ngày Tháng Năm Sinh</strong></label>
+                <input type="date" id="date">
+                <div id="dateError" class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="number"><strong>Số điện thoại</strong></label>
+                <input type="text" id="number" placeholder="Số điện thoại">
+                <div id="numberError" class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" id="email" placeholder="Email">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="user"><strong>Tên đăng nhập</strong></label>
+                <input type="text" id="user" placeholder="Tên đăng nhập">
+                <div id="userError" class="error"></div>
+            </div>
+            <div class="form-control">
+                <label for="password"><strong>Mật khẩu</strong></label>
+                <input type="password" id="password" placeholder="Mật khẩu">
+                <div id="passwordError" class="error"></div>
+            </div>
+            <div class="singin">
+                <p>Đã có tài khoản?<a href="user.html"> <strong>Đăng Nhập</strong></a> </p>
+            </div>
+        </form>
+        <div class="action">
+            <button type="button" class="btn" onclick="submitForm()">Đăng ký</button>
+        </div>
+        <br>
+    </div>
+
+    <br>
+    <iframe src="/FE/customer/views/footer.html" frameborder="0" class="footer"></iframe>
+</body>
+
+<script src="./js/signup.js"></script>
+</html>

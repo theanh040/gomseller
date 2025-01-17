@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sản Phẩm</title>
+    <link rel="stylesheet" href="/FE/customer/css/addproduct.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Thêm Sản Phẩm Mới</h1>
+        <form id="addProductForm">
+            <label for="productName">Tên sản phẩm:</label>
+            <input type="text" id="productName" required>
+        
+            <label for="productPrice">Giá sản phẩm:</label>
+            <input type="number" id="productPrice" required>
+        
+            <label for="productDescription">Mô tả sản phẩm:</label>
+            <textarea id="productDescription" required></textarea>
+        
+            <label for="productImage">Chọn hình ảnh:</label>
+            <input type="file" id="productImage" accept="image/*" required>
+        
+            <label for="productTag">Tag sản phẩm:</label>
+            <input type="text" id="productTag" required> <!-- Trường nhập tag -->
+        
+            <button type="submit">Thêm sản phẩm</button>
+        </form>
+        
+        
+    </div>
+
+    <script src="/FE/customer/js/addproduct.js"></script>
+</body>
+
+</html>

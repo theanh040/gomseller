@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="stylesheet" href="/FE/customer/css/nav.css">
+    <script src="https://kit.fontawesome.com/e8e6ca6395.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOr2gsYKWOFURwmRervH_NrlYHs6uNZ08&callback=initMap" async defer></script>
+
+</head>
+
+<body>
+    <section class="navi">
+        <nav>
+            <div class="navigation">
+                <a href="/FE/customer/index.html" target="_blank">
+                    <img src="/FE/customer/images/logo/Logo lachongstore 10.png" alt="Logo cong ty">
+                </a>
+
+                <!-- Thanh tìm kiếm -->
+                <form class="search">
+                    <input type="text" class="search-text" placeholder="Tìm kiếm...">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+
+                <!-- Thông tin vị trí -->
+                <div id="location">
+                    <div id="map" style="width: 200px; height: 40px;"></div> 
+                </div>
+
+                <!-- Giỏ hàng và tài khoản -->
+                <a href="giohang.html" target="_blank">
+                    <button class="shopping-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="label">Giỏ hàng</span>
+                    </button>
+                </a>
+                <a href="login.html" target="_blank">
+                    <button class="user-btn">
+                        <i class="fa-solid fa-circle-user fa-shake"></i>
+                        <span class="label">Tài khoản</span>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu">
+        <ul>
+            <li><a href="/FE/customer/index.html" target="_blank">Trang chủ</a></li>
+            <li><a href="product-binhgom.html" target="_blank">Bình Gốm</a></li>
+            <li><a href="product.html" target="_blank">Ấm Trà</a></li>
+            <li><a href="lienhe.html" target="_blank">Đồ Gốm khác</a></li>
+        </ul>
+    </section>
+
+   <script src="/FE/customer/js/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="/FE/customer/css/cart.css">
+</head>
+<body>
+    <!-- Tiêu đề giỏ hàng -->
+    <h1>Giỏ hàng của bạn</h1>
+
+    <!-- Bảng hiển thị sản phẩm trong giỏ -->
+    <div id="cart-container">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dữ liệu sẽ được render tại đây -->
+            </tbody>
+        </table>
+        <div id="cart-summary">
+            <p>Tổng cộng: <span id="total-price">0</span> VNĐ</p>
+        </div>
+    </div>
+
+    <script src="/FE/customer/js/cart.js"></script>
+</body>
+</html>

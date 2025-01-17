@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/FE/customer/css/login.css">
+  <script src="https://kit.fontawesome.com/e8e6ca6395.js" crossorigin="anonymous"></script>
+  <title>Đăng Nhập</title>
+</head>
+
+<body>
+  <div class="iframe-nav">
+    <iframe src="/FE/customer/views/nav.html" frameborder="0"></iframe>
+</div>
+  <div class="container">
+    <div class="content">
+      <h1>Đăng Nhập</h1>
+    </div>
+    <form id="loginForm" action="" class="dangnhap">
+      <div class="form-control">
+        <label for="username">Tên đăng nhập</label>
+        <input id="username" type="email" placeholder="Số điện thoại / Email">
+        <div class="error" id="usernameError"></div>
+      </div>
+
+      <div class="form-control">
+        <label for="password">Mật khẩu</label>
+        <input id="password" type="password" placeholder="Mật khẩu">
+        <div class="error" id="passwordError"></div>
+      </div>
+      <div class="signup">
+        <p>Chưa có tài khoản? <a href="/FE/customer/views/signup.html"><strong>Đăng kí</strong></a></p>
+      </div>
+    </form>
+    <div class="action">
+      <button type="submit" class="btn" onclick="submit()">Đăng Nhập</button>
+    </div>
+  </div>
+
+
+  <div class="iframe-wrapper">
+    <iframe src="/FE/customer/views/footer.html" frameborder="0" class="footer"></iframe>
+</div>
+</body>
+<script src="/FE/customer/js/login.js"></script>
+
+</html>

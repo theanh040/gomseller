@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;    
+    padding: 0;
+    justify-content: space-between;
+    
+}
+.navi {
+ 
+    background-color: #365899;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: auto;
+}
+
+.search {
+    display: flex; 
+    align-items: center; 
+
+    position: relative;
+}
+
+.search .search-text {
+    width: 600px; 
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search .search-text:focus {
+    border-color: #007acc;
+}
+
+.search .search-btn {
+    position: relative;
+    right: 61px;
+    background-color: #00bfff; 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px; 
+    color: white; 
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; 
+}
+
+.search .search-btn:hover {
+    background-color: #007acc; 
+}
+
+.search .search-btn i {
+    font-size: 20px; 
+}
+
+.navigation .shopping-btn,
+.navigation .user-btn {
+    font-size: 25px;
+    padding-right: 2px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+
+  
+}
+
+.navigation .shopping-btn span,
+.navigation .user-btn span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+img {
+    position: relative;
+    left: 30px;
+    width: 100%;
+    height: auto;
+    scale: 0.7;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .item {
+    flex-basis: 30%;
+    margin: 10px;
+}
+.menu {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: #2b7ed1;
+}
+.menu li {
+    list-style: none;
+    float: left;
+    width: 200px;
+    margin: auto;
+    padding: 20px;
+}
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: #2d2b2b 0.3s ease;
+}
+.menu li a:hover {
+    color: #4c4b4b;
+}
+#location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+#map {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+    
+}

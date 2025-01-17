@@ -1,0 +1,105 @@
+/* Reset margin và padding cho tất cả các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo border và padding được tính trong kích thước phần tử */
+}
+
+/* Toàn bộ body */
+body {
+    width: 100%;
+    font-family: Arial, sans-serif; /* Đảm bảo giao diện nhất quán với font sans-serif */
+    line-height: 1.6; /* Tăng khả năng đọc */
+    background-color: #f9f9f9; /* Thêm màu nền nhẹ nhàng */
+    color: #333; /* Màu chữ chính */
+    margin: 0; /* Đảm bảo không có khoảng cách ngoài body */
+    padding: 0;
+}
+
+/* Flexbox cho các cột */
+.colum {
+    display: flex;
+    justify-content: space-around; /* Phân bổ đều khoảng cách giữa các phần tử */
+    align-items: center; /* Căn giữa theo trục ngang */
+    width: 100%;
+    margin: 20px auto; /* Thêm khoảng cách ngoài cho toàn bộ flexbox */
+    font-size: 15px;
+}
+
+/* Khoảng cách giữa các icon */
+.icon {
+    margin: 10px 0;
+    display: flex;
+    align-items: center; /* Đảm bảo icon và text được căn giữa */
+}
+
+/* Khoảng cách và canh chỉnh icon và text */
+.icon img {
+    margin-right: 8px; /* Tăng khoảng cách giữa icon và text */
+    width: 24px;
+    height: 24px;
+    object-fit: contain; /* Đảm bảo ảnh icon không bị méo */
+}
+
+/* Phần tiêu đề của từng mục con */
+.sub h4 {
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold; /* Làm tiêu đề nổi bật hơn */
+    color: #2db6e3; /* Thêm màu sắc nổi bật */
+}
+
+/* Đường kẻ ngang */
+.hr {
+    height: 2px;
+    background-color: #e8e8e8; /* Dùng màu nhạt hơn để phù hợp với giao diện nhẹ nhàng */
+    border: none; /* Xóa border không cần thiết */
+    margin: 15px 0; /* Thêm khoảng cách cho đường kẻ */
+}
+
+/* Phần chân trang */
+.footer-bot p {
+    text-align: center;
+    margin: 10px 0; /* Tăng khoảng cách giữa các đoạn text trong footer */
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6); /* Màu chữ nhẹ nhàng */
+    line-height: 1.5; /* Tăng khoảng cách dòng */
+}
+
+/* Liên kết trong phần footer */
+.footer-bot p a {
+    color: #2db6e3; /* Màu xanh nổi bật */
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+/* Hiệu ứng hover của liên kết */
+.footer-bot p a:hover {
+    color: #0a319a;
+}
+
+/* Chữ cái đầu tiên của liên kết */
+.footer-bot p a::first-letter {
+    color: #0a319a;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* Hình ảnh trong col-1 .item-1 */
+.col-1 .item-1 img {
+    width: 100%;
+    max-width: 300px; /* Đặt giới hạn chiều rộng cho ảnh */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị thay đổi */
+    position: relative;
+    left: -40px;
+    transform: scale(0.7); /* Thay scale bằng transform để hợp lý hơn */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Thêm hiệu ứng khi hover */
+}
+
+/* Hiệu ứng hover cho hình ảnh */
+.col-1 .item-1 img:hover {
+    transform: scale(0.8); /* Tăng kích thước ảnh khi hover */
+}
